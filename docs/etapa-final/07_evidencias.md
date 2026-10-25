@@ -1,25 +1,33 @@
-# Evidências para o relatório PDF final
+# Evidências da entrega final do Study Hub
 
-Este documento e um roteiro de verificação; não representa comprovacao automatica.
+**Data de referência:** 25/10/2026
 
-## Links já identificados
+## Links públicos verificados
 
-- GitHub: https://github.com/MatheusCLobo/Projetos-pessoais
-- Site: https://matheusclobo.github.io/Projetos-pessoais/
-- Video da etapa intermediária: https://youtu.be/MhiacuqmxP4
-- Link da apresentação **final**: [PREENCHER APOS GRAVAR]
+| Recurso | Link |
+| --- | --- |
+| Código e README | https://github.com/MatheusCLobo/Projetos-pessoais |
+| Site publicado | https://matheusclobo.github.io/Projetos-pessoais/ |
+| Documentação de implantação | https://github.com/MatheusCLobo/Projetos-pessoais/tree/main/docs/etapa-final |
+| Commit de documentação final | https://github.com/MatheusCLobo/Projetos-pessoais/commit/0cdb45e5107d34ba792a9a802e4747a637d8eb84 |
+| Commit de correção de links | https://github.com/MatheusCLobo/Projetos-pessoais/commit/1694495236509bd30411cdca170be381ed3a9d26 |
+| Vídeo da etapa intermediária (histórico) | https://youtu.be/MhiacuqmxP4 |
+| **Novo vídeo da etapa final** | **Pendente de gravação e publicação; inserir o link no relatório final.** |
 
-## Capturas recomendadas
+## Evidências observadas em tela durante a execução
 
-1. Página do repositório com pastas e `docs/etapa-final`.
-2. Histórico de commits com atualização da etapa final.
-3. Planilha/documento com consulta real ao Gemini (sem dados privados).
-4. Configuração de colaboradores/permissões ou resumo verificavel, ocultando informações privadas.
-5. Arquivos `SECURITY.md` e `CONTRIBUTING.md` publicados.
-6. Checklist de testes preenchido com resultados reais.
-7. Site funcionando e último deployment concluido.
-8. Video final publicado, com duracao e URL.
+- **GitHub Pages:** configuração de publicação pela branch `main` e HTTPS marcado.
+- **Colaboradores:** nenhum colaborador adicional listado.
+- **Proteção de branch:** ausência de branch protection rules e rulesets; limitação registrada.
+- **Estrutura do repositório:** nove documentos dentro de `docs/etapa-final` e arquivos `SECURITY.md` e `CONTRIBUTING.md` na raiz.
+- **Versionamento:** commits de publicação dos documentos e de correção dos links.
+- **Página inicial:** layout renderizado com cabeçalho, apresentação e painéis.
+- **Menu Projetos:** navegação funcionando e quatro cartões exibidos.
+- **UniData:** documentação abrindo formatada no GitHub após corrigir o destino do link.
+- **Gemini:** consulta real realizada sobre implantação, segurança, permissões e testes.
 
-## Orientacao para o PDF
+As evidências em tela podem ser capturadas novamente para ilustrar o PDF ou mostradas diretamente no vídeo. Este arquivo é um registro escrito, não contém cópias das capturas originais.
 
-Explicar a continuidade do projeto desde a primeira etapa, os objetivos da implantação, as tecnologias, a contribuicao real do Gemini, as configurações verificadas, os testes e as limitacoes. Inclua links diretos. **Não atribua ao site um sistema de login próprio, nem apresente configurações planejadas como se já estivessem ativas.**
+## Cuidados no relatório final
+
+Não atribuir ao site um sistema interno de login. Não declarar que proteção da branch, pull requests, colaboração externa, 2FA ou auditoria completa foram implantados quando não há comprovação. Explicar a correção de links como um problema encontrado e resolvido no teste. Anexar o novo vídeo antes de submeter o PDF final.

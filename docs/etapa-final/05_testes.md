@@ -1,29 +1,34 @@
-# Testes e verificação de implantação
+# Testes do Study Hub — entrega final
 
-**Preencher após a execução real.** Marcar `[x]` apenas quando o teste for feito. Se algo falhar, anotar a falha e a correção ou limitacao encontrada.
+**Data da execução:** 25/10/2026  
+**Ambiente observado:** navegador Microsoft Edge no computador, site GitHub Pages e telas de configuração do GitHub.  
+**Cuidado:** os testes marcados como realizados foram observados ou conferidos de fato; itens pendentes não são apresentados como aprovados.
 
-| Teste | Como executar | Resultado | Data |
-| --- | --- | --- | --- |
-| Site público | Abrir o link do GitHub Pages em janela anonima | [PENDENTE] | - |
-| Navegacao | Clicar em Sobre, Disciplinas, Projetos e Organização | [PENDENTE] | - |
-| Repositório público | Abrir o GitHub deslogado | [PENDENTE] | - |
-| Arquivos presentes | Conferir README, pastas e documentos da entrega final | [PENDENTE] | - |
-| Versionamento | Conferir commit da etapa final na `main` | [PENDENTE] | - |
-| Controle de escrita | Conferir acesso de colaboradores em Settings | [PENDENTE] | - |
-| Segurança | Revisar arquivos públicos e configurações de segurança | [PENDENTE] | - |
-| Gemini | Registrar orientação recebida e decisão tomada | [PENDENTE] | - |
-| Publicação após atualização | Conferir status do Pages em Actions/Deployments | [PENDENTE] | - |
-| Apresentação final | Conferir o link do novo video publicado | [PENDENTE] | - |
+| Teste | Resultado | Evidência / observação |
+| --- | --- | --- |
+| Abrir o site público por HTTPS | **Aprovado** | Página inicial do Study Hub carregou com layout e conteúdo visíveis no navegador. |
+| Verificar layout da página inicial | **Aprovado** | Cabeçalho, apresentação, painel de diretórios e botões exibidos corretamente no print. |
+| Navegar pelo menu `Projetos` | **Aprovado** | Clique levou à seção Projetos acadêmicos com quatro cartões visíveis. |
+| Abrir documentação pelo botão `Saiba mais` do UniData | **Aprovado após correção** | Inicialmente abriu Markdown como texto puro pelo Pages; depois do ajuste abriu o `README.md` formatado no GitHub. |
+| Corrigir links dos READMEs e documentos Markdown | **Concluído** | Nove endereços `href` foram alterados para links `github.com/.../blob/main/...`. Commit `1694495`. |
+| Conferir existência dos arquivos de destino dos links | **Aprovado** | Os arquivos Markdown das três disciplinas, três projetos e os documentos `planejamento.md` e `versionamento.md` foram localizados no repositório. Não equivale a clicar manualmente em todos os links. |
+| Confirmar arquivos de implantação | **Aprovado** | Pasta `docs/etapa-final` com nove arquivos e documentos `SECURITY.md` e `CONTRIBUTING.md` na raiz; commit `0cdb45e`. |
+| Confirmar versionamento | **Aprovado** | Histórico com os commits de documentação e correção do site na `main`. |
+| Conferir acesso dos colaboradores | **Conferido** | Tela `Settings > Collaborators` mostrou zero colaboradores adicionais. |
+| Conferir HTTPS no GitHub Pages | **Conferido** | Opção `Enforce HTTPS` marcada na configuração do Pages. |
+| Conferir proteção da `main` | **Conferido, com limitação** | Não havia branch protection rules nem rulesets. A proteção não foi configurada. |
+| Utilizar Google Gemini no planejamento | **Realizado** | Consulta sobre implantação, acessos, segurança e testes; registro em `02_uso_gemini.md`. |
+| Validação automatizada local anterior | **Realizada** | Resultados de verificações estáticas em `08_validacao_local.md`; não substitui o teste no navegador. |
+| Abrir o site em janela anônima | **Não verificado nesta sessão** | Teste complementar sugerido para validar acesso totalmente deslogado. |
+| Testar menu em largura de celular | **Não verificado nesta sessão** | Teste complementar de responsividade. |
+| Confirmar status exato do último deployment nas Actions | **Não verificado nesta sessão** | A página foi observada funcionando após a atualização, mas o log do job não foi inspecionado. |
+| Conferir 2FA pessoal, alertas e ausência absoluta de segredos | **Não verificado integralmente** | Requer revisão privada e/ou auditoria apropriada; não afirmar validação completa. |
+| Publicar apresentação final nova no YouTube | **Pendente até a gravação** | Informar link no relatório após publicar. |
 
-## Verificação manual adicional
+## Problema identificado e correção
 
-- Inspecionar se algum arquivo contêm senha, token, numero de documento ou informacao confidencial.
-- Revisar se as pastas principais estão legíveis e se links apontam para páginas reais.
-- Confirmar que não existem telas falsas de login, permissões ou usuários no site estático.
+Durante o teste, o link `Saiba mais` do UniData levava a um arquivo Markdown exibido diretamente pelo GitHub Pages. Nesse endereço, o navegador mostrava `#` e `**` como texto, sem o visual formatado do GitHub. A correção foi mudar os endereços dos arquivos `.md` para páginas de visualização do GitHub com `/blob/main/`. Depois do commit `1694495`, o UniData foi novamente acessado e apareceu formatado corretamente.
 
-## Conclusao - preencher após os testes
+## Conclusão parcial dos testes
 
-- **Ajustes realizados:** [PREENCHER]
-- **Problemas e soluções:** [PREENCHER]
-- **Limitacoes conhecidas:** [PREENCHER]
-- **Pronto para uso como portfólio público?** [RESPONDER APOS TESTAR]
+O Study Hub está acessível e os testes manuais da página inicial, da navegação para Projetos e do link do UniData foram aprovados. A documentação e os commits estão disponíveis no GitHub. Permanecem como melhorias: teste responsivo e em janela anônima, revisão dos recursos de segurança que não foram checados e eventual proteção da branch `main`.

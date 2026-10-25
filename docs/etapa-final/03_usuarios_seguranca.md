@@ -1,42 +1,44 @@
-# Gestão de usuários e segurança
+# Gestão de usuários e segurança — verificações da entrega final
 
-## Contexto
+**Data da revisão:** 25/10/2026  
+**Conta proprietária:** `MatheusCLobo`  
+**Repositório:** [Projetos-pessoais](https://github.com/MatheusCLobo/Projetos-pessoais)
 
-O Study Hub e um site **estático** no GitHub Pages, não um sistema com contas proprias. A gestão de usuários e o controle de escrita sao realizados pelo **GitHub**, enquanto a leitura do site publicado e livre.
+## Modelo de usuários do projeto
 
-| Perfil | Acesso de leitura | Acesso de alteração |
+O Study Hub é um site **estático**, publicado no GitHub Pages. O site não possui sistema próprio de login, cadastro ou controle de usuários. Visitantes podem visualizar o conteúdo público, enquanto a alteração dos arquivos depende de permissões na plataforma GitHub.
+
+| Perfil | Pode ler? | Pode alterar o repositório diretamente? |
 | --- | --- | --- |
-| Visitante da página pública | Sim | Não |
-| Visitante do repositório público | Sim | Não, sem permissao |
-| Proprietario autenticado | Sim | Sim, conforme configurações da conta |
-| Colaborador convidado | Sim | Dependente do convite e permissões |
+| Visitante do site | Sim | Não |
+| Visitante do repositório público | Sim | Não, somente por ser visitante |
+| Proprietário autenticado | Sim | Sim, conforme a autorização da conta |
+| Colaborador convidado | Sim | Depende da permissão concedida |
 
-## Verificacoes praticas com o proprietário
+## Verificações realizadas em 25/10/2026
 
-1. Entrar no GitHub e confirmar o nome da conta proprietaria.
-2. Abrir `Settings` do repositório e localizar `Collaborators` ou a área de acesso.
-3. Conferir se existem colaboradores; não adicionar um usuário ficticio. Registrar resultado real.
-4. Conferir que o repositório e público, mantendo no repositório apenas material que pode ser publicado.
-5. Revisar as opções de segurança: alertas de segredos e dependencias, quando disponíveis.
-6. Conferir na configuração pessoal do GitHub se a autenticação em dois fatores está habilitada, sem expor códigos na gravacao.
-7. Verificar se existem regras de proteção de branch disponíveis para este tipo de repositório e conta; registrar o que foi configurado de verdade.
+| Configuração | Resultado observado |
+| --- | --- |
+| Visibilidade do repositório | **Público**, para apresentação acadêmica e portfólio. |
+| Proprietário | `MatheusCLobo`. |
+| Colaboradores adicionais | **Nenhum** na tela `Settings > Collaborators`. |
+| GitHub Pages | Publicação a partir da branch `main`, diretório raiz. |
+| HTTPS | Opção **Enforce HTTPS** marcada em `Settings > Pages`. |
+| Proteção clássica da branch | **Nenhuma regra configurada** na tela `Settings > Branches`. |
+| Rulesets | **Nenhum ruleset configurado** na tela `Settings > Rulesets`. |
+| Autenticação em dois fatores (2FA) da conta | **Não verificada** nesta revisão; não afirmar ativação. |
+| Alertas de segurança e proteção de segredos | **Não verificados** nesta revisão. |
 
-## Regras adotadas na documentação
+## Cuidados e políticas documentadas
 
-- Principio do menor privilegio: não conceder edição sem necessidade.
-- Não incluir dados sensíveis, tokens, chaves ou senhas em código e commits.
-- Manter controle das versoes e revisar antes de publicar na branch principal.
-- Corrigir e registrar vulnerabilidades sem publicar informações privadas.
-- Usar recursos de segurança oferecidos pelo GitHub quando estiverem disponíveis e forem adequados ao plano.
+1. Não publicar senhas, chaves privadas, tokens nem dados pessoais confidenciais em arquivos do repositório.
+2. Manter somente acessos de escrita necessários; não convidar pessoas apenas para simular colaboração.
+3. Revisar alterações antes do commit e registrar mensagens que expliquem as modificações.
+4. Para alterações futuras maiores, considerar uma branch separada e revisão por pull request.
+5. Revisar regras de proteção de branch e configurações de segurança disponíveis no GitHub, sem declarar como ativado o que ainda não foi configurado.
+6. Conferir a autenticação em dois fatores nas configurações pessoais da conta, em ambiente privado.
+7. Caso uma credencial seja exposta, revogar ou substituir essa credencial; apenas apagar o texto do repositório pode não ser suficiente por causa do histórico Git.
 
-## Resultado real da conferência - preencher
+## Conclusão honesta
 
-- Conta proprietaria: `MatheusCLobo` (identificada no repositório público)
-- Visibilidade do repositório: público (identificado anteriormente; reconferir no dia)
-- Colaboradores com acesso de escrita: [VERIFICAR]
-- Dois fatores na conta: [VERIFICAR PRIVADAMENTE]
-- Proteção ou regras da branch principal: [VERIFICAR]
-- Alertas de segurança: [VERIFICAR]
-- Arquivos sensíveis encontrados na revisão: [VERIFICAR]
-
-**Limite honesto da implementação:** a página não autentica visitantes e não oferece papeis de usuário dentro do site. A segurança de publicação e colaboração e tratada no GitHub.
+O controle de alterações é feito pelo GitHub, sem usuários internos do Study Hub. Foram conferidos o acesso público, a ausência de colaboradores adicionais, a publicação pela `main` e o HTTPS. A ausência de regras de proteção da branch foi registrada como limitação atual. A checagem das configurações pessoais de 2FA e de todos os alertas de segurança ficou fora do escopo verificado nesta sessão.
