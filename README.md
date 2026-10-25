@@ -1,57 +1,39 @@
 # Study Hub | Matheus Lobo
 
-**Engenharia da Computação · CEUB Asa Norte · Bootcamp I**
+**Engenharia da Computação - CEUB Asa Norte - Bootcamp I**
 
-Este repositório reúne a evolução do meu Study Hub: um espaço para organizar disciplinas, registrar projetos acadêmicos e compartilhar meu aprendizado em tecnologia. A ideia nasceu no planejamento da primeira etapa do Bootcamp I e agora ganhou uma página pública, documentação e organização para versionamento com Git.
+O Study Hub nasceu na primeira etapa do Bootcamp I como um planejamento para organizar meus estudos, projetos e experiências acadêmicas. Na etapa intermediária, organizei um repositório, documentei os projetos e publiquei uma página no GitHub Pages. Na entrega final, dou continuidade ao mesmo projeto, aplicando o desafio **PortfolioHUB + IA Gemini**: planejamento de implantação, revisão de acessos e segurança, colaboração e testes.
 
-- **Site (GitHub Pages):** https://matheusclobo.github.io/Projetos-pessoais/
+- **Site:** https://matheusclobo.github.io/Projetos-pessoais/
 - **Repositório:** https://github.com/MatheusCLobo/Projetos-pessoais
-- **Documento de planejamento:** [Primeira etapa](docs/etapa-inicial-study-hub.pdf)
-- **Planejamento atualizado:** [docs/planejamento.md](docs/planejamento.md)
-- **Histórico e boas práticas:** [docs/versionamento.md](docs/versionamento.md)
+- **Apresentação da etapa intermediária:** https://youtu.be/MhiacuqmxP4
+- **Planejamento original:** [PDF da primeira etapa](docs/etapa-inicial-study-hub.pdf)
 
-> Atenção: os links acima apontam para o repositório já existente. O novo visual do Study Hub só aparecerá no site depois que os arquivos desta entrega forem efetivamente enviados ao GitHub.
+## Organização
 
-## Objetivos
+As seções principais continuam sendo `01_Apresentacao_e_Perfil`, `02_Disciplinas_Atuais`, `03_Projetos_Academicos`, `04_Certificados_e_Cursos` e `05_Portfolio_e_Curriculo`. Os READMEs apresentam conteúdo acadêmico e descrição de projetos. Nem todas as pastas contêm códigos completos: algumas apresentam propostas e experiências anteriores.
 
-1. Reunir e documentar atividades de Bootcamp I, Gestão de Projetos e Probabilidade e Estatística.
-2. Registrar projetos acadêmicos de forma clara, inclusive os que ainda não possuem código público.
-3. Aplicar boas práticas de organização, documentação, versionamento e publicação no GitHub Pages.
-4. Usar o resultado como parte de um portfólio profissional em desenvolvimento.
+## Entrega final - implantação PortfolioHUB com apoio do Gemini
 
-## Organização de pastas
+A documentação de apoio e de execução está em [docs/etapa-final/](docs/etapa-final/README.md):
 
-```text
-├── index.html                           # Site principal (GitHub Pages)
-├── assets/css/style.css                # Estilos da página
-├── assets/js/main.js                   # Menu responsivo
-├── 01_Apresentacao_e_Perfil/            # Perfil e objetivos
-├── 02_Disciplinas_Atuais/              # Disciplinas e materiais
-│   ├── Bootcamp_I/
-│   ├── Gestao_de_Projetos/
-│   └── Probabilidade_e_Estatistica/
-├── 03_Projetos_Academicos/             # Projetos documentados
-│   ├── UniData_Banco_de_Dados/
-│   ├── IA_Apoio_Triagem_Medica/
-│   └── Hackathons/
-├── 04_Certificados_e_Cursos/           # Cursos e certificados
-├── 05_Portfolio_e_Curriculo/           # Apresentação de carreira
-├── docs/                                # Planejamento, etapas e roteiros
-└── projetos/                            # Compatibilidade com a estrutura anterior
-```
+1. [Plano de implantacao](docs/etapa-final/01_plano_implantacao.md)
+2. [Uso do Gemini e registro de orientacoes](docs/etapa-final/02_uso_gemini.md)
+3. [Gestão de usuários e seguranca](docs/etapa-final/03_usuarios_seguranca.md)
+4. [Colaboração, compartilhamento e controle de versao](docs/etapa-final/04_compartilhamento.md)
+5. [Testes de implantacao](docs/etapa-final/05_testes.md)
+6. [Roteiro da apresentação final](docs/etapa-final/06_roteiro_video.md)
+7. [Evidências e entrega](docs/etapa-final/07_evidencias.md)
+8. [Validacao automatizada local](docs/etapa-final/08_validacao_local.md)
 
-## Tecnologias
+As orientações gerais do repositório também estão em [SECURITY.md](SECURITY.md) e [CONTRIBUTING.md](CONTRIBUTING.md).
 
-HTML5, CSS3, JavaScript, Markdown, Git, GitHub e GitHub Pages. A página é estática e não coleta dados dos visitantes.
+## Tecnologias e limites
 
-## Como visualizar localmente
+HTML, CSS, JavaScript, Markdown, Git, GitHub e GitHub Pages. O site e **estático e público**: visitantes podem acessar sua página, mas não existe sistema próprio de login nem banco de dados de usuários. A administração de edição, colaboração e permissões ocorre no GitHub, sem inventar funcionalidades de autenticação que o site não possui.
 
-Abra `index.html` no navegador. Para testar com um servidor local, execute `python -m http.server 8000` e acesse `http://localhost:8000`.
+O Gemini e utilizado como **apoio para planejar, revisar e testar**. Ele não substitui a verificação feita pelo aluno. Os registros de uso real da ferramenta devem ser adicionados após a interação com ela.
 
-## Publicação e integração
+## Autor
 
-As instruções completas para **atualizar o repositório**, publicar via GitHub Pages e integrar com LinkedIn estão em [docs/guia-publicacao.md](docs/guia-publicacao.md). O roteiro para o vídeo da apresentação está em [docs/roteiro-video.md](docs/roteiro-video.md).
-
-## Autoria e responsabilidade
-
-Projeto acadêmico pessoal de Matheus Cordeiro Umbelino Lobo. Os textos foram organizados com apoio de ferramentas digitais, com revisão de informações e responsabilidade do autor. Não incluo material privado de terceiros, credenciais ou arquivos que não tenho autorização para publicar.
+Matheus Cordeiro Umbelino Lobo. Projeto acadêmico pessoal de Bootcamp I. Não publique segredos, senhas, dados pessoais de terceiros ou documentos sem autorização.
